@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyName>ObjectCollectionConverter</AssemblyName>
+    <RootNamespace>ObjectCollectionConverter</RootNamespace>
+    <Version>0.0.1</Version>
+    <Copyright>Carlos Jiménez Fabra</Copyright>
+    <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+  </PropertyGroup>
+
+</Project>
