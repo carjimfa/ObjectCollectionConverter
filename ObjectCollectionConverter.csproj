@@ -7,6 +7,11 @@
     <Version>0.0.1</Version>
     <Copyright>Carlos Jiménez Fabra</Copyright>
     <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/carjimfa/ObjectCollectionConverter</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/carjimfa/ObjectCollectionConverter</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Object Collection Converter Dictionary Converter</PackageTags>
+    <NeutralLanguage>en-US</NeutralLanguage>
   </PropertyGroup>
 
 </Project>
