@@ -6,6 +6,11 @@ Collection types supported:
 
 -Dictionary
 
+## Install
+
+```powershell
+Install-Package ObjectCollectionConverter -Version 0.0.1
+```
 ## Overview
 
 After install, we can convert any object-derived object into a Dictionary. 
