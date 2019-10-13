@@ -4,7 +4,7 @@
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <AssemblyName>ObjectCollectionConverter</AssemblyName>
     <RootNamespace>ObjectCollectionConverter</RootNamespace>
-    <Version>0.0.1</Version>
+    <Version>0.0.2</Version>
     <Copyright>Carlos Jiménez Fabra</Copyright>
     <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/carjimfa/ObjectCollectionConverter</PackageProjectUrl>
