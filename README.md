@@ -89,3 +89,6 @@ The string Dictionary will be a Dictionary with string keys and string values wh
 }
 ```
 
+## Change Log
+
+2019-10-13 : Updates to Net Core 2.2
