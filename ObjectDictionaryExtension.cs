@@ -34,7 +34,18 @@ namespace ObjectCollectionConverter
                 object value = property.GetValue(source);
                 if (IsPrimitive(value))
                 {
-                    dictionary.Add(property.Name, value.ToString());
+                    if (IsOfType<bool>(value))
+                    {
+                        dictionary.Add(property.Name, (bool) value ? "true" : "false");
+                    }
+                    else
+                    {
+                        dictionary.Add(property.Name, value.ToString());
+                    }
+                }
+                else if (IsOfType<IEnumerable<object>>(source))
+                {
+                    dictionary.Add(property.Name, "list");
                 }
                 else
                 {
