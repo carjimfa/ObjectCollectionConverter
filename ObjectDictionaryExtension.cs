@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Linq;
 using System.Text;
 
 namespace ObjectCollectionConverter
@@ -40,9 +41,18 @@ namespace ObjectCollectionConverter
                     }
                     else
                     {
-                        dictionary.Add(property.Name, value.ToString());
+                        if(value!=null)
+                        {
+                            dictionary.Add(property.Name, value.ToString());
+                        }
+                        else
+                        {
+                            dictionary.Add(property.Name, "null");
+                        }
                     }
                 }
+                //TODO: Move to ProcessNoPromitiveObject
+                //TODO: Iterate on the list and go back to ToStringDictionary to each element
                 else if (IsOfType<IEnumerable<object>>(source))
                 {
                     dictionary.Add(property.Name, "list");

@@ -12,6 +12,8 @@
     <RepositoryType>git</RepositoryType>
     <PackageTags>Object Collection Converter Dictionary Converter</PackageTags>
     <NeutralLanguage>en-US</NeutralLanguage>
+    <PackageVersion>1</PackageVersion>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
 </Project>
