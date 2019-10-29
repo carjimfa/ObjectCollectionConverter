@@ -12,7 +12,7 @@
     <RepositoryType>git</RepositoryType>
     <PackageTags>Object Collection Converter Dictionary Converter</PackageTags>
     <NeutralLanguage>en-US</NeutralLanguage>
-    <PackageVersion>2</PackageVersion>
+    <PackageVersion>3</PackageVersion>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 

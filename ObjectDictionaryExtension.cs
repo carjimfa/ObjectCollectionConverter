@@ -36,6 +36,7 @@ namespace ObjectCollectionConverter
                 if(value==null)
                 {
                     dictionary.Add(property.Name, "null");
+                    continue;
                 }
                 
                 if (IsPrimitive(value) && value != null)
