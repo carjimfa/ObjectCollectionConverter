@@ -38,35 +38,34 @@ namespace ObjectCollectionConverter
                     dictionary.Add(property.Name, "null");
                     continue;
                 }
-                
-                if (IsPrimitive(value) && value != null)
+
+                else
                 {
-                    if (IsOfType<bool>(value))
+                    if (IsPrimitive(value) && value != null)
                     {
-                        dictionary.Add(property.Name, (bool) value ? "true" : "false");
-                    }
-                    else
-                    {
-                        if(value!=null)
+                        if (IsOfType<bool>(value))
                         {
-                            dictionary.Add(property.Name, value.ToString());
+                            dictionary.Add(property.Name, (bool) value ? "true" : "false");
                         }
                         else
                         {
-                            dictionary.Add(property.Name, "null");
+                            dictionary.Add(property.Name, value.ToString());
                         }
                     }
+                    //TODO: Move to ProcessNoPromitiveObject
+                    //TODO: Iterate on the list and go back to ToStringDictionary to each element
+                    else if (IsOfType<IEnumerable<object>>(source))
+                    {
+                        dictionary.Add(property.Name, "list");
+                    }
+                    else
+                    {
+                        ProcessNonPrimitiveObject(dictionary, property, value);
+                    }
                 }
-                //TODO: Move to ProcessNoPromitiveObject
-                //TODO: Iterate on the list and go back to ToStringDictionary to each element
-                else if (IsOfType<IEnumerable<object>>(source))
-                {
-                    dictionary.Add(property.Name, "list");
-                }
-                else
-                {
-                    ProcessNonPrimitiveObject(dictionary, property, value);
-                }
+                
+                
+                
             }
             return dictionary;
         }
