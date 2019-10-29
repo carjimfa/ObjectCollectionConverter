@@ -33,7 +33,12 @@ namespace ObjectCollectionConverter
             foreach (PropertyDescriptor property in TypeDescriptor.GetProperties(source))
             {
                 object value = property.GetValue(source);
-                if (IsPrimitive(value))
+                if(value==null)
+                {
+                    dictionary.Add(property.Name, "null");
+                }
+                
+                if (IsPrimitive(value) && value != null)
                 {
                     if (IsOfType<bool>(value))
                     {
